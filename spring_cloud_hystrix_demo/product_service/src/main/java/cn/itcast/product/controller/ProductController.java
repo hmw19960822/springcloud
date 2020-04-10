@@ -34,6 +34,7 @@ public class ProductController {
 	@RequestMapping(value = "",method = RequestMethod.POST)
 	public String save(@RequestBody Product product) {
 		productService.save(product);
+		System.out.println("这是张三的笔记");
 		System.out.println("这是李四的笔记");
 		return "保存成功";
 	}
